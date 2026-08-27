@@ -1,0 +1,18 @@
+name: Run WesoDeri OS
+
+on: [push]
+
+jobs:
+  run-os:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run WesoDeri OS 1.0
+        run: |
+          echo "Booting WesoDeri OS 1.0 - Agra Edition..."
+          cat README.md
+          echo ""
+          echo "System: WesoDeri OS"
+          echo "RAM: 700MB Used"
+          echo "Status: Running on GitHub!"
+          echo "Made in Agra, India"
