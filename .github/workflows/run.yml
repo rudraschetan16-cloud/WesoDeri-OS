@@ -1,0 +1,20 @@
+name: Run WesoDeri OS
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  run-os:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Boot WesoDeri OS
+        run: |
+          echo "=============================="
+          echo " WesoDeri OS 1.0 Booted"
+          echo " Made in Agra, India"
+          echo "=============================="
+          ls -la
+          cat README.md
